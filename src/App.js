@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import RupeeContainer from "./components/RupeeContainer";
+import HeartsContainer from "./components/HeartsContainer"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-container">
+      <header className="header-container">
+        <HeartsContainer />
+        <h1 className="inventory-title">Inventory</h1>
+        <RupeeContainer />
       </header>
+      <div className=""></div>
+      <footer className="footer-container"></footer>
     </div>
   );
 }
